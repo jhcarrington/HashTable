@@ -1,0 +1,11 @@
+Complete the profiling part of the assignment using java flight recorder before 
+answering the following questions.
+
+1.) What can you tell about the performance of your hash table implementation compared to Java's tree map? Explain why it is better/worse.
+The performance of our hash table was better than the performance of Java's tree map. 
+The TreeMap class is a red black tree which has an average time complexity of O(log(N)) for inserting and deleting. 
+Our hashTable class has a best case time complexity of O(1) and a worst case of O(N) for inserting and deleting. 
+With a good hash function the average case for a hash table is O(1). So our hashTable should perform better than Java's treemap  
+
+2.) What did you observe in java mission control to come to the conclusion above?
+We observed in the code tab of JMC that the percentage of time spent on the TreeMap was significantly higher than the time spent on our HashTable
